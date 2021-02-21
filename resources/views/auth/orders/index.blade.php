@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="col-md-12">
-        <h1>Заказы</h1>
+        <h1>Orders</h1>
         <table class="table">
             <tbody>
             <tr>
@@ -12,19 +12,19 @@
                     #
                 </th>
                 <th>
-                    Имя
+                    Name
                 </th>
                 <th>
-                    Телефон
+                    Category
                 </th>
                 <th>
-                    Когда отправлен
+                    When sended
                 </th>
                 <th>
-                    Сумма
+                    Amount
                 </th>
                 <th>
-                    Действия
+                    Action
                 </th>
             </tr>
             @foreach($orders as $order)

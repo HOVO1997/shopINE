@@ -12,5 +12,8 @@
             @include('card',compact('product'))
         @endforeach
     </div>
+    <div class="justify-content-center d-flex ">
+        {{ $products->links() }}
+    </div>
 </div>
 @endsection

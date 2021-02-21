@@ -106,7 +106,7 @@
                 </div>
             </div>
         @endif
-        <div class="container d-flex justify-content-center">
+        <div class="container ">
             @yield('content')
         </div>
 

@@ -3,7 +3,7 @@
 @section('title','All Categories')
 
 @section('content')
-
+<div class="d-flex justify-content-center">
     <div class="text-center">
         @foreach($categories as $category)
 
@@ -23,5 +23,5 @@
 
         @endforeach
     </div>
-
+</div>
 @endsection

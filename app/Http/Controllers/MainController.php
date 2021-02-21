@@ -11,7 +11,7 @@ class MainController extends Controller
 {
 
     public function index(){
-        $products = Product::get();
+        $products = Product::paginate(3);
         return view('index',compact('products'));
     }
 
@@ -22,7 +22,7 @@ class MainController extends Controller
 
     public function category($code){
         $category = Cat::where('code', $code)->first();
-//        $products = Product::where('category_id',$category->id)->get();
+
         return view('category', compact('category'));
     }
 

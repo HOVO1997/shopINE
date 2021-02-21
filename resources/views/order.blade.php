@@ -4,7 +4,7 @@
 
 @section('content')
 
-
+<div class="d-flex justify-content-center">
     <form style="width: 50%;" method="POST" action="{{ route('basket-confirm') }}">
         @csrf
         <div class="text-center">
@@ -26,6 +26,6 @@
             <button type="submit" class="btn btn-primary">Buy</button>
         </div>
     </form>
-
+</div>
 
 @endsection

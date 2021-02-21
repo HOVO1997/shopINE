@@ -86,6 +86,7 @@ class BasketController extends Controller
 
     public function basketConfirm(Request $request)
     {
+        
         $orderId = session('orderId');
         if (is_null($orderId)) {
             return redirect()->route('index');
